@@ -1,0 +1,19 @@
+.boton1{
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(136, 31, 168);
+    border-radius:5px;
+    color:  #881fa8;
+}
+.boton2{
+    background-color: white;
+    margin:50px;
+    border: 0px solid rgb(255, 255, 255);
+    color:  rgb(136, 31, 168);
+    font-size:20px ;
+}
+.boton3{
+    border: 0px solid rgb(255, 255, 255);
+    background-color: white;
+    font-size:16px ;
+}

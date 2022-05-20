@@ -1,10 +1,14 @@
-
-import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({children}) => {
+    
     return (
+        <>
         <Navbar collapseOnSelect expand="lg" >
             <Container>
             <Navbar.Brand href="#home">Luna Indumentaria</Navbar.Brand>
@@ -30,7 +34,10 @@ const NavBar = () => {
             </Navbar.Collapse>
             <CartWidget/>
             </Container>
+            
         </Navbar>
+        {children}
+        </>
     )
 }
 

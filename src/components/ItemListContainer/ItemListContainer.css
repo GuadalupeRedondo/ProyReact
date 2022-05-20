@@ -1,0 +1,11 @@
+.contenedor{
+    margin: 15px;
+    width: 150px;
+    height: 250px;
+    border: 2px solid rgb(75, 75, 75);
+    background-color:rgb(207, 207, 207);
+}
+h1{
+    font-size:20px;
+    margin: 30px;
+}
