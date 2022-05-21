@@ -2,15 +2,19 @@ import React, { useEffect, useState } from 'react'
 
 import './ItemCount.css';
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial}) => {
 
     const [count, setCount] = useState(initial)
 
     function onAdd(){
+    if(count < stock){
         setCount(count + 1)     
     }
+    }
     function resta(){
+    if(count > initial){
         setCount(count - 1)
+    }    
     }
     useEffect( () => {
         console.log({count})
