@@ -1,6 +1,16 @@
-const itemList = ({items}) => {
+import {Item} from './Item'
+
+const itemList = ({products}) => {
   return (
-    <div>itemList</div>
+    <ul className='itemList'>
+      {
+        products.map(p =>{
+          return < Item product={p} />
+        })
+      }
+    </ul>
   )
 }
+
 export default itemList
+
