@@ -4,8 +4,8 @@ const itemList = ({products}) => {
   return (
     <ul className='itemList'>
       {
-        products.map(p =>{
-          return < Item product={p} />
+        products.map(data =>{
+          return < Item product={data} />
         })
       }
     </ul>
