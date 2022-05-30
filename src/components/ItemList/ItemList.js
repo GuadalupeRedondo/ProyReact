@@ -7,7 +7,7 @@ console.log(products)
     <ul className='itemList'>
       {
         products.map(data =>{
-          return <Item product={data} />
+          return <Item  key={data.id} product={data} />
         })
       }
     </ul>
